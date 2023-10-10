@@ -1,0 +1,83 @@
+@import '../../styles/global.sass'
+
+.container
+  position: relative
+
+  & :global
+
+    .elipse
+      position: absolute
+      filter: blur(20px)
+      top: 50%
+      left: 50%
+      transform: translateX(-50%) translateY(-50%)
+
+    .examples-elipse
+      width: 100%
+      max-width: 525px
+      aspect-ratio: 1/1
+      border-radius: 700px
+      background: radial-gradient(50% 50.00% at 50% 50.00%, #763CAC 0%, rgba(50, 15, 133, 0.00) 100%)
+      position: absolute
+      z-index: -1
+      filter: blur(20px)
+      top: 50%
+      left: 50%
+      transform: translateX(-50%) translateY(-50%)
+
+    h6
+      color: #9857D3
+      font-family: Poppins, sans-serif
+      font-size: 16px
+      font-style: normal
+      font-weight: 600
+      margin-bottom: 10px
+
+    p
+      color: #CCD6F6
+      font-family: Poppins, sans-serif
+      font-size: 34px
+      font-style: normal
+      font-weight: 600
+
+    .examples-container
+      display: flex
+      justify-content: center
+      gap: 20px
+      flex-wrap: wrap
+      .examples-text
+        flex: 1
+        min-width: 350px
+
+
+        .blur
+          background: lightgray 0 0 / 154.22531366348267px 154.22531366348267px repeat, radial-gradient(151.92% 127.02% at 15.32% 21.04%, rgba(105, 59, 147, 0.20) 0%, rgba(110, 191, 244, 0.04) 77.08%, rgba(70, 144, 212, 0.00) 100%)
+          background-blend-mode: overlay, normal
+          backdrop-filter: blur(40px)
+          border-radius: 14px
+
+          .p-1
+            color: #CCD6F6
+            font-family: Poppins, sans-serif
+            font-size: 18px
+            font-style: normal
+            font-weight: 500
+            padding: 20px 20px
+
+      .examples-picture
+        flex: 1.5
+        border-radius: 10px
+        background: #2B0B3A
+        min-width: 350px
+        min-height: 250px
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+@import '../../styles/global'
+
+header
+  width: 100%
+  background-color: #1A0B2E
+
+  .container
+    width: 100%
+    max-width: 1200px
+    margin: 0 auto
+    padding: 0 10px
+
+    .header
+      padding: 20px 0
+      width: 100%
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+      .logo
+        flex: 1
+
+        @media (max-width: 470px)
+          display: none
+
+        img
+          max-width: 35px
+
+      nav
+        flex: 1
+
+      ul
+        display: flex
+        text-align: center
+        list-style: none
+        color: white
+        justify-content: space-between
+        font-size: 20px
+        font-family: Plus Jakarta Sans, sans-serif
+        cursor: pointer
+        font-weight: 600
+        gap: 30px
+
+        @media (max-width: 470px)
+          font-size: 18px
+
+        a
+          color: inherit
+          text-decoration: none
+        li
+          transition: all 0.3s
+          &:hover
+            transform: scale(1.1)
+            text-shadow: $text-shadow
+
+
+
+@media (max-width: 470px)
+  .header
+
+    .logo
+      display: none
+
+    ul
+      font-size: 18px
+
+
+
+
+
+
+
+
+
+
+

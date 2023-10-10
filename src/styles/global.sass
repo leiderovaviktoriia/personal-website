@@ -1,0 +1,53 @@
+$white-color-text: #FFF
+$color-brown-light: #c3956a
+$color-brown-dark: #A14F03
+$color-gradient-90: linear-gradient(90deg,$color-brown-light,$color-brown-dark)
+$text-shadow: 4px 4px 5px $white-color-text
+
+@keyframes LeftToRight
+  0%
+    opacity: 0
+    transform: translateX(-10rem)
+  80%
+    transform: translateX(1rem)
+  100%
+    opacity: 1
+    transform: translateX(0)
+
+@keyframes RightToLeft
+  0%
+    opacity: 0
+    transform: translateX(10rem)
+  80%
+    transform: translateX(-1rem)
+  100%
+    opacity: 1
+    transform: translateX(0)
+
+
+@keyframes movingFlare
+  0%
+    left: -30px
+    margin-left: 0
+
+  30%
+    left: 110%
+    margin-left: 80px
+
+  100%
+    left: 110%
+    margin-left: 80px
+
+*
+  box-sizing: border-box
+
+img
+  width: 100%
+
+html
+  scroll-behavior: smooth
+
+body
+  background-color: #11071F
+  position: relative
+  scroll-behavior: smooth

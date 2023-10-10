@@ -1,0 +1,112 @@
+@import "../../styles/global"
+
+.photoText
+  display: flex
+  align-items: center
+  gap: 60px
+  padding-bottom: 130px
+  position: relative
+
+  @media (max-width: 430px)
+    padding-bottom: 70px
+
+  & :global
+
+    .photo
+      max-width: 245px
+      position: relative
+
+      .elipse
+        position: absolute
+        filter: blur(20px)
+        top: 50%
+        left: 50%
+        transform: translateX(-50%) translateY(-50%)
+
+      .photo-elipse
+        width: 258px
+        height: 259px
+        border-radius: 259px
+        background: radial-gradient(50% 50.00% at 50% 50.00%, #FFF 17.71%, rgba(67, 67, 67, 0.00) 100%)
+        z-index: -1
+
+      .photo-elipse-second
+        width: 385px
+        height: 431px
+        border-radius: 431px
+        background: radial-gradient(50% 50.00% at 50% 50.00%, #763CAC 0%, rgba(50, 15, 133, 0.00) 100%)
+        z-index: -2
+
+    .text
+      animation-name: RightToLeft
+      animation-duration: 4s
+      animation-delay: 1s
+      animation-timing-function: ease
+
+      .first-p
+        font-family: Preahvihear, sans-serif
+        font-size: 17px
+        font-style: normal
+        font-weight: 400
+        color: $white-color-text
+        padding-bottom: 28px
+
+      h1
+        font-family: Preahvihear, sans-serif
+        font-size: 50px
+        font-style: normal
+        font-weight: 400
+        color: $white-color-text
+        padding-bottom: 10px
+        position: relative
+        span
+          color: #7127BA
+
+      .second-p
+        font-family: Preahvihear, sans-serif
+        font-size: 11px
+        font-style: normal
+        font-weight: 400
+        color: $white-color-text
+
+        @media (max-width: 470px)
+          font-size: 15px
+
+    .information-arrow
+      position: absolute
+      top: 0
+      display: flex
+      transform: translateY(-100%) translateX(35%)
+
+      @media (max-width: 555px)
+        display: none
+
+      .information-name
+        font-family: Preahvihear, sans-serif
+        font-size: 19px
+        font-style: normal
+        font-weight: 400
+        color: $white-color-text
+        margin-top: 15px
+        animation-name: LeftToRight
+        animation-duration: 4s
+        animation-delay: 1s
+        animation-timing-function: ease
+        span
+          color: #7127BA
+      .arrow
+        width: 91.782px
+        height: 81.857px
+        animation-name: LeftToRight
+        animation-duration: 4s
+        animation-delay: 1s
+        animation-timing-function: ease
+
+
+
+
+
+
+
+
+

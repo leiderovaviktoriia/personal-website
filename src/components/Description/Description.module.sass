@@ -1,0 +1,78 @@
+@import '../../styles/global.sass'
+
+.onlyText
+
+  & :global
+
+    h2
+      font-family: Preahvihear, sans-serif
+      font-size: 50px
+      font-style: normal
+      font-weight: 400
+      color: $white-color-text
+
+      @media (max-width: 555px)
+        padding-bottom: 40px
+
+    .third-p
+      font-family: Preahvihear, sans-serif
+      font-size: 22px
+      font-style: normal
+      font-weight: 400
+      line-height: normal
+      color: $white-color-text
+      padding-bottom: 70px
+      display: flex
+      align-items: center
+
+      @media (max-width: 555px)
+        display: none
+
+      .facebook
+        width: 20px
+        display: inline-flex
+
+      span
+        color: #1877F2
+
+    .fouth-p
+      font-family: Preahvihear, sans-serif
+      font-size: 20px
+      font-style: normal
+      font-weight: 400
+      line-height: normal
+      color: $white-color-text
+
+
+  .contact
+    margin: 100px 0
+    .contact-container
+      .contact-text
+        p
+          color: #FFF
+          font-family: Preahvihear, sans-serif
+          font-size: 15px
+          font-style: normal
+          font-weight: 400
+      .contact-icons
+        display: flex
+        justify-content: flex-start
+        gap: 30px
+
+        img
+          width: 27px
+          transition: all 0.3s
+          cursor: pointer
+
+          &:hover
+            transform: scale(1.2)
+
+@media (max-width: 555px)
+  .onlyText
+
+    & :global
+
+      h2
+        padding-bottom: 40px
+      .third-p
+        display: none
